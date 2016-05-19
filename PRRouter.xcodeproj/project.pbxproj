@@ -16,6 +16,8 @@
 		938D51EF1CECC124003A8ED1 /* NSNumber+PRRouterURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 938D51ED1CECC124003A8ED1 /* NSNumber+PRRouterURLCoding.m */; };
 		93CA2C621CECD7A000942451 /* NSDictionary+PRRouterURLCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 93CA2C601CECD7A000942451 /* NSDictionary+PRRouterURLCoding.h */; };
 		93CA2C631CECD7A000942451 /* NSDictionary+PRRouterURLCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CA2C611CECD7A000942451 /* NSDictionary+PRRouterURLCoding.m */; };
+		93CA2C6B1CED94AB00942451 /* UIViewController+PRRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 93CA2C691CED94AB00942451 /* UIViewController+PRRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93CA2C6C1CED94AB00942451 /* UIViewController+PRRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CA2C6A1CED94AB00942451 /* UIViewController+PRRouter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		938D51ED1CECC124003A8ED1 /* NSNumber+PRRouterURLCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+PRRouterURLCoding.m"; sourceTree = "<group>"; };
 		93CA2C601CECD7A000942451 /* NSDictionary+PRRouterURLCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+PRRouterURLCoding.h"; sourceTree = "<group>"; };
 		93CA2C611CECD7A000942451 /* NSDictionary+PRRouterURLCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PRRouterURLCoding.m"; sourceTree = "<group>"; };
+		93CA2C691CED94AB00942451 /* UIViewController+PRRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PRRouter.h"; sourceTree = "<group>"; };
+		93CA2C6A1CED94AB00942451 /* UIViewController+PRRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PRRouter.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			children = (
 				9333A1551CE4772B00CEE91B /* PRRouter.h */,
 				938D51E61CECC065003A8ED1 /* Utils */,
+				93CA2C681CED944100942451 /* Categories */,
 				9333A16C1CE47AD000CEE91B /* Supporting Files */,
 			);
 			path = Sources;
@@ -120,6 +125,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		93CA2C681CED944100942451 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				93CA2C691CED94AB00942451 /* UIViewController+PRRouter.h */,
+				93CA2C6A1CED94AB00942451 /* UIViewController+PRRouter.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -131,6 +145,7 @@
 				938D51EE1CECC124003A8ED1 /* NSNumber+PRRouterURLCoding.h in Headers */,
 				93CA2C621CECD7A000942451 /* NSDictionary+PRRouterURLCoding.h in Headers */,
 				938D51EA1CECC118003A8ED1 /* NSString+PRRouterURLCoding.h in Headers */,
+				93CA2C6B1CED94AB00942451 /* UIViewController+PRRouter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +248,7 @@
 				93CA2C631CECD7A000942451 /* NSDictionary+PRRouterURLCoding.m in Sources */,
 				938D51EF1CECC124003A8ED1 /* NSNumber+PRRouterURLCoding.m in Sources */,
 				938D51EB1CECC118003A8ED1 /* NSString+PRRouterURLCoding.m in Sources */,
+				93CA2C6C1CED94AB00942451 /* UIViewController+PRRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
