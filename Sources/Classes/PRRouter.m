@@ -189,3 +189,20 @@
 }
 
 @end
+
+@implementation UIViewController (PRRouterExtension)
+
++ (void)pr_mapToPath:(NSString *)path
+{
+    [[PRRouter defaultRouter] mapControllerClass:self
+                                          toPath:path];
+}
+
++ (void)pr_mapToPath:(NSString *)path style:(PRRouterTransitionStyle)style
+{
+    [[PRRouter defaultRouter] mapControllerClass:self
+                                          toPath:path
+                                           style:style];
+}
+
+@end

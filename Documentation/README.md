@@ -172,6 +172,43 @@ Open a path with the specified navigation controller.
 | fragment   | The fragmen to be used when initiating the view controller.          |
 | controller | The navigation controller with which the view controller is pushed.  |
 
+## UIViewController (PRRouterExtension)
+
+### Map to a Path Quickly
+
+#### + pr_mapToPath:
+
+Map this controller class to a path
+
+##### Declaration
+
+```objective-c
++ (void)pr_mapToPath:(NSString *)path
+```
+
+##### Parameters
+
+| Paramter | Description               |
+| -------- | ------------------------- |
+| path     | The path to be mapped to. |
+
+#### + pr_mapToPath:style:
+
+Map this controller class to a path
+
+##### Declaration
+
+```objective-c
++ (void)pr_mapToPath:(NSString *)path style:(PRRouterTransitionStyle)style
+```
+
+##### Parameters
+
+| Paramter        | Description                                          |
+| --------------- | ---------------------------------------------------- |
+| path            | The path to be mapped to.                            |
+| style           | The style of animation used presenting a controller. |
+
 ## UIViewController (PRRouter)
 
 ### Accessing Configurations

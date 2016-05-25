@@ -95,3 +95,22 @@ typedef NS_ENUM(NSUInteger, PRRouterTransitionStyle) {
 - (void)openPath:(NSString *)path query:(NSDictionary *)query fragment:(NSString *)fragment withNavigationController:(UINavigationController *)controller;
 
 @end
+
+@interface UIViewController (PRRouterExtension)
+
+/**
+ *  Map this controller class to a path
+ *
+ *  @param path The path to be mapped to.
+ */
++ (void)pr_mapToPath:(NSString *)path;
+
+/**
+ *  Map this controller class to a path
+ *
+ *  @param path  The path to be mapped to.
+ *  @param style The style of animation used presenting a controller.
+ */
++ (void)pr_mapToPath:(NSString *)path style:(PRRouterTransitionStyle)style;
+
+@end
