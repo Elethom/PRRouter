@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PRRouter"
-  s.version             = "0.2"
+  s.version             = "0.3"
   s.summary             = "URL router framework for iOS"
   s.homepage            = "https://github.com/Elethom/PRRouter"
   s.license             = { :type => "MIT", :file => "LICENSE" }
