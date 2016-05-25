@@ -93,8 +93,8 @@
     self.router = [[PRRouter alloc] init];
     for (NSString *path in mappedPaths) {
         Class controllerClass = mappedPaths[path];
-        [self.router mapPath:path
-           toControllerClass:controllerClass];
+        [self.router mapControllerClass:controllerClass
+                                 toPath:path];
     }
 }
 

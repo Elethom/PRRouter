@@ -25,21 +25,21 @@ typedef NS_ENUM(NSUInteger, PRRouterTransitionStyle) {
 + (instancetype)defaultRouter;
 
 /**
- *  Map a path to a controller class.
+ *  Map a controller class to a path.
  *
- *  @param path            The path to be mapped.
  *  @param controllerClass The controller class to be associated with path.
+ *  @param path            The path to be mapped to.
  */
-- (void)mapPath:(NSString *)path toControllerClass:(Class)controllerClass;
+- (void)mapControllerClass:(Class)controllerClass toPath:(NSString *)path;
 
 /**
- *  Map a path to a controller class.
+ *  Map a controller class to a path.
  *
- *  @param path            The path to be mapped.
  *  @param controllerClass The controller class to be associated with path.
+ *  @param path            The path to be mapped to.
  *  @param style           The style of animation used presenting a controller.
  */
-- (void)mapPath:(NSString *)path toControllerClass:(Class)controllerClass style:(PRRouterTransitionStyle)style;
+- (void)mapControllerClass:(Class)controllerClass toPath:(NSString *)path style:(PRRouterTransitionStyle)style;
 
 /**
  *  Returns the controller class associated with a given path.

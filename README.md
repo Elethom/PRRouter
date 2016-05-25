@@ -79,8 +79,8 @@ Run `pod install` to install the framework.
 
 + (void)load
 {
-    [[PRRouter defaultRouter] mapPath:@"/user/:user_id"
-                    toControllerClass:self];
+    [[PRRouter defaultRouter] mapControllerClass:self
+                                          toPath:@"/user/:user_id"];
 }
 
 ...

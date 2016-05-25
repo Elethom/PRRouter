@@ -46,12 +46,12 @@
 
 #pragma mark - External
 
-- (void)mapPath:(NSString *)path toControllerClass:(Class)controllerClass
+- (void)mapControllerClass:(Class)controllerClass toPath:(NSString *)path
 {
-    [self mapPath:path toControllerClass:controllerClass style:PRRouterTransitionStylePush];
+    [self mapControllerClass:controllerClass toPath:path style:PRRouterTransitionStylePush];
 }
 
-- (void)mapPath:(NSString *)path toControllerClass:(__unsafe_unretained Class)controllerClass style:(PRRouterTransitionStyle)style
+- (void)mapControllerClass:(Class)controllerClass toPath:(NSString *)path style:(PRRouterTransitionStyle)style
 {
     PRRouterNode *node = self.rootNode;
     NSArray *components = path.pathComponents;

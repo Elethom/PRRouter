@@ -24,39 +24,39 @@ A `PRRouter` instance can also be initialized by `[[PRRouter alloc] init]`.
 
 ### Map a Path to a Controller Class
 
-#### - mapPath:toControllerClass:
+#### - mapControllerClass:toPath:
 
-Map a path to a controller class.
+Map a controller class to a path.
 
 ##### Declaration
 
 ```objective-c
-- (void)mapPath:(NSString *)path toControllerClass:(Class)controllerClass
+- (void)mapControllerClass:(Class)controllerClass toPath:(NSString *)path
 ```
 
 ##### Parameters
 
 | Paramter        | Description                                      |
 | --------------- | ------------------------------------------------ |
-| path            | The path to be mapped.                           |
 | controllerClass | The controller class to be associated with path. |
+| path            | The path to be mapped to.                        |
 
-#### - mapPath:toControllerClass:style:
+#### - mapControllerClass:toPath:style:
 
-Map a path to a controller class.
+Map a controller class to a path.
 
 ##### Declaration
 
 ```objective-c
-- (void)mapPath:(NSString *)path toControllerClass:(Class)controllerClass style:(PRRouterTransitionStyle)style
+- (void)mapControllerClass:(Class)controllerClass toPath:(NSString *)path style:(PRRouterTransitionStyle)style
 ```
 
 ##### Parameters
 
 | Paramter        | Description                                          |
 | --------------- | ---------------------------------------------------- |
-| path            | The path to be mapped.                               |
 | controllerClass | The controller class to be associated with path.     |
+| path            | The path to be mapped to.                            |
 | style           | The style of animation used presenting a controller. |
 
 ### Get a Mapped Controller Class
